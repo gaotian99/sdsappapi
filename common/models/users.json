@@ -50,7 +50,7 @@
       "model": "messages",
       "foreignKey": "userID"
     },
-    "sdsAccessTokens": {
+    "accessTokens": {
       "type": "hasMany",
       "model": "sdsAccessToken",
       "foreignKey": "userID",
@@ -61,10 +61,15 @@
   },
   "acls": [
     {
-      "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "create"
     }
   ],
   "methods": {}
