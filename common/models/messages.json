@@ -1,0 +1,1 @@
+{"name":"messages","plural":"messages","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"messageContent":{"type":"string","required":true},"author":{"type":"string","required":true},"recipient":{"type":"string","required":true},"replyOf":{"type":"string"}},"validations":[],"relations":{},"acls":[],"methods":{}}

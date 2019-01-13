@@ -1,0 +1,1 @@
+{"name":"users","plural":"users","base":"User","idInjection":true,"options":{"validateUpsert":true},"properties":{"age":{"type":"number"},"sex":{"type":"string"},"phoneNumber":{"type":"string"},"role":{"type":"string"},"description":{"type":"string"},"rank":{"type":"string"}},"validations":[],"relations":{},"acls":[],"methods":{}}

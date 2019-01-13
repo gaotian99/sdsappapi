@@ -1,0 +1,1 @@
+{"name":"teams","plural":"teams","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"name":{"type":"string","required":true},"leagueID":{"type":"string","required":true},"players":{"type":["string"]},"captain":{"type":"string","required":true},"description":{"type":"string"}},"validations":[],"relations":{},"acls":[],"methods":{}}

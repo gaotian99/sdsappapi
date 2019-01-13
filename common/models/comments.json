@@ -1,0 +1,1 @@
+{"name":"comments","plural":"comments","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"commentContent":{"type":"string","required":true},"author":{"type":"string","required":true},"postID":{"type":"string","required":true}},"validations":[],"relations":{},"acls":[],"methods":{}}

@@ -1,0 +1,1 @@
+{"name":"matches","plural":"matches","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"location":{"type":"string","required":true},"startDate":{"type":"string"},"gameDate":{"type":"date"},"gameTeams":{"type":["string"]},"description":{"type":"string"}},"validations":[],"relations":{},"acls":[],"methods":{}}
