@@ -49,6 +49,14 @@
       "type": "hasMany",
       "model": "messages",
       "foreignKey": "userID"
+    },
+    "sdsAccessTokens": {
+      "type": "hasMany",
+      "model": "sdsAccessToken",
+      "foreignKey": "userID",
+      "options": {
+        "disableInclude": true
+      }
     }
   },
   "acls": [
