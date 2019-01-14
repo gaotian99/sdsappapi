@@ -1,10 +1,10 @@
 'use strict';
-module.exports = function (app) {
+module.exports = function(app) {
   var Role = app.models.Role;
 
-  Role.registerResolver('teamPlayer', function (role, context, cb) {
+  Role.registerResolver('teamPlayer', function(role, context, cb) {
     function reject() {
-      process.nextTick(function () {
+      process.nextTick(function() {
         cb(null, false);
       });
     }
@@ -23,15 +23,15 @@ module.exports = function (app) {
     // check if the model is posts
     if (context.modelName === 'posts') {
       // check if userId is in team table for the given project id
-      context.model.findById(context.modelId, function (err, post) {
+      context.model.findById(context.modelId, function(err, post) {
         if (err || !post)
           return reject();
 
         var Teamuser = app.models.Teamsusers;
         Teamuser.count({
           teamID: post.ofTeam,
-          userID: userId
-        }, function (err, count) {
+          userID: userId,
+        }, function(err, count) {
           if (err) {
             console.log(err);
             return cb(null, false);
@@ -45,20 +45,20 @@ module.exports = function (app) {
     // check if the model is comments
     if (context.modelName === 'comments') {
       // check if userId is in team table for the given project id
-      context.model.findById(context.modelId, function (err, comment) {
+      context.model.findById(context.modelId, function(err, comment) {
         if (err || !comment)
           return reject();
 
         var Post = app.models.Posts;
-        Post.findById(comment.postID, function (err, thePost) {
+        Post.findById(comment.postID, function(err, thePost) {
           if (err || !thePost)
             return reject();
 
           var Teamuser = app.models.Teamsusers;
           Teamuser.count({
             teamID: thePost.ofTeam,
-            userID: userId
-          }, function (err, count) {
+            userID: userId,
+          }, function(err, count) {
             if (err) {
               console.log(err);
               return cb(null, false);
