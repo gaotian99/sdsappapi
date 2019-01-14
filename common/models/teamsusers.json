@@ -1,1 +1,26 @@
-{"name":"teamsusers","plural":"teamsusers","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"teamID":{"type":"string","required":true},"userID":{"type":"string","required":true},"position":{"type":"string"}},"validations":[],"relations":{},"acls":[],"methods":{}}
+{
+  "name": "teamsusers",
+  "plural": "teamsusers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "teamID": {
+      "type": "string",
+      "required": true
+    },
+    "userID": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
