@@ -13,9 +13,8 @@
       "./mixins"
     ]
   },
-  
   "User": {
-    "dataSource": "db",
+    "dataSource": "sdss",
     "public": false
   },
   "users": {
@@ -73,7 +72,7 @@
     "public": false
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "sdss",
     "public": false
   }
 }

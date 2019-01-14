@@ -1,1 +1,36 @@
-{"name":"messages","plural":"messages","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"messageContent":{"type":"string","required":true},"senderID":{"type":"string","required":true},"userID":{"type":"string","required":true},"replyOf":{"type":"string"}},"validations":[],"relations":{"users":{"type":"belongsTo","model":"users","foreignKey":"userID"}},"acls":[],"methods":{}}
+{
+  "name": "messages",
+  "plural": "messages",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "messageContent": {
+      "type": "string",
+      "required": true
+    },
+    "senderID": {
+      "type": "string",
+      "required": true
+    },
+    "userID": {
+      "type": "string",
+      "required": true
+    },
+    "replyOf": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "userID"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

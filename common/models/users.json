@@ -22,6 +22,9 @@
     "description": {
       "type": "string"
     },
+    "avatar": {
+      "type": "string"
+    },
     "rank": {
       "type": "string"
     }
