@@ -4,7 +4,6 @@ module.exports = function(Comments) {
   Comments.disableRemoteMethodByName('patchOrCreate'); // stop show API: PATCH /xxx
   Comments.disableRemoteMethodByName('prototype.patchAttributes'); // stop show API: PATCH /xxx/:id
   Comments.disableRemoteMethodByName('replaceOrCreate'); // stop show API: PUT /xxx
-  Comments.disableRemoteMethodByName('findOrCreate'); // stop show API: HEAD /xxx/:id
   Comments.disableRemoteMethodByName('replaceById'); // stop show API: POST /xxx/:id/replace
   Comments.disableRemoteMethodByName('createChangeStream'); // stop show API: GET / POST /xxx/change-steam
   Comments.disableRemoteMethodByName('upsertWithWhere'); // stop show API: PATCH /xxx/upsertWithWhere
