@@ -81,6 +81,9 @@ https://loopback.io/doc/en/lb3/index.html
 Loopback Framework introduce
 https://apidocs.strongloop.com/loopback/#
 
+Vue.js 介绍
+https://cn.vuejs.org/v2/guide/
+
 Node.js Express一个例子
 https://github.com/nswbmw/N-blog/tree/master/book
 
