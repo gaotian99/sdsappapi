@@ -25,10 +25,41 @@ npm install -g loopback-cli
 如果之前安装过strongloop，需要进行一次版本的更新:
 npm install -g strongloop
 
-###安装pm2
+### 安装pm2
 
 npm install pm2 -g
 
+### Install Caddy
+
+wget  https://github.com/ToyoDAdoubi/doubi/raw/master/caddy_install.sh
+
+### Setup Caddy
+
+Create a new caddy_conf_file at "/usr/local/caddy/Caddyfile"
+
+//http://xxx.com {
+// redir https://xxx.com{url}
+//}
+
+https://xxx.com {
+ gzip
+ tls your@email.com
+ proxy / 127.0.0.1:3000
+}
+
+Caddy will automatic work in ssl mode
+
+### Clone this
+
+then
+npm install
+
+### Change Datasource in this program
+
+
+### Run the program
+
+pm2 .
 
 ## Reference
 
@@ -49,3 +80,27 @@ https://loopback.io/doc/en/lb3/index.html
 
 Loopback Framework introduce
 https://apidocs.strongloop.com/loopback/#
+
+Node.js Express一个例子
+https://github.com/nswbmw/N-blog/tree/master/book
+
+Loopback3 中文指导
+https://www.jianshu.com/p/763b1a847d2c
+
+NODE JS和EXPRESS 4 ROUTER搭建实现RESTFUL API
+https://putty.biz/1038
+
+程序的自动重启与永生(supervisor and pm2)
+https://www.jianshu.com/p/7a30d239f010
+
+Caddy install
+
+wget  https://github.com/ToyoDAdoubi/doubi/raw/master/caddy_install.sh
+
+Linux 安装Mongodb
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+https://docs.mongodb.com/manual/reference/configuration-file-settings-command-line-options-mapping/#conf-file-command-line-mapping
+
+https://juejin.im/post/5b0519cf518825426539d05e
+https://blog.csdn.net/wycf1314/article/details/10225921
