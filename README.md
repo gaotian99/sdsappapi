@@ -87,6 +87,9 @@ https://github.com/nswbmw/N-blog/tree/master/book
 Loopback3 中文指导
 https://www.jianshu.com/p/763b1a847d2c
 
+Node.js学习：使用loopback做邮箱验证
+https://www.jianshu.com/p/21b4d84fb7af
+
 NODE JS和EXPRESS 4 ROUTER搭建实现RESTFUL API
 https://putty.biz/1038
 
@@ -104,3 +107,29 @@ https://docs.mongodb.com/manual/reference/configuration-file-settings-command-li
 
 https://juejin.im/post/5b0519cf518825426539d05e
 https://blog.csdn.net/wycf1314/article/details/10225921
+
+Video Links
+
+Vue.js 手牽手，一起嗑光全家桶
+https://www.youtube.com/watch?v=yo1zTr2b2FY&list=PLEfh-m_KG4dYor8h4Hi2lqKJ0xqNTFh16
+
+Vue 全家桶與 RESTful API 串接入門介紹
+https://www.youtube.com/watch?v=MCTETw0Slrw
+
+Vue 全家桶與 RESTful API 串接入門介紹 Part 2
+https://www.youtube.com/watch?v=aYlihfn-Gmg
+
+Nodejs MongoDb Express 零基础 入门 实战 视频教程
+https://www.youtube.com/playlist?list=PL9nxfq1tlKKlcx425yrc-17LiY0lcQBeC
+
+Node.js学习
+https://www.youtube.com/playlist?list=PLliocbKHJNwvbitOJ73M04PUoJae79kEg
+
+LoopBack REST API with Authentication
+https://www.youtube.com/watch?v=UTxhKZuVaG8&t=657s
+
+Vue cookbook
+https://cn.vuejs.org/v2/cookbook/index.html
+
+Vue.js Tutorials
+https://www.youtube.com/playlist?list=PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9
