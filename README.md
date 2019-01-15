@@ -133,3 +133,21 @@ https://cn.vuejs.org/v2/cookbook/index.html
 
 Vue.js Tutorials
 https://www.youtube.com/playlist?list=PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9
+
+## DCloud, HBuilderX, and uni-app
+
+Native.js示例汇总
+http://ask.dcloud.net.cn/article/114
+
+uni-app
+https://uniapp.dcloud.io/
+
+HBuilderX
+http://www.dcloud.io/hbuilderx.html
+
+uni-app source code
+https://github.com/dcloudio/uni-app
+
+美团mpvue source code
+https://github.com/Meituan-Dianping/mpvue
+
