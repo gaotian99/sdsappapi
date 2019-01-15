@@ -93,6 +93,12 @@ https://www.jianshu.com/p/763b1a847d2c
 Node.js学习：使用loopback做邮箱验证
 https://www.jianshu.com/p/21b4d84fb7af
 
+JavaScript 教程
+https://wangdoc.com/javascript/
+
+ECMAScript 6 入门
+http://es6.ruanyifeng.com/
+
 NODE JS和EXPRESS 4 ROUTER搭建实现RESTFUL API
 https://putty.biz/1038
 
@@ -154,3 +160,14 @@ https://github.com/dcloudio/uni-app
 美团mpvue source code
 https://github.com/Meituan-Dianping/mpvue
 
+HBuilderX - 高效极客技巧
+http://ask.dcloud.net.cn/article/13191
+
+uni-app组件规范
+https://uniapp.dcloud.io/component/README
+
+uni-app接口规范
+https://uniapp.dcloud.io/api/README
+
+uni-app 配置
+https://uniapp.dcloud.io/collocation/pages
