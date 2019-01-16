@@ -15,6 +15,12 @@
       "type": "string",
       "required": true
     },
+    "postImg": {
+      "type": "string"
+    },
+    "postVideo": {
+      "type": "string"
+    },
     "userID": {
       "type": "string",
       "required": true
