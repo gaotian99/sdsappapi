@@ -16,8 +16,7 @@
       "required": true
     },
     "result": {
-      "type": "boolean",
-      "required": true
+      "type": "boolean"
     },
     "score": {
       "type": "number"
