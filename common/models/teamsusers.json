@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "teams": {
+      "type": "belongsTo",
+      "model": "teams",
+      "foreignKey": "teamID"
+    },
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "userID"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

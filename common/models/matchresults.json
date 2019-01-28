@@ -26,7 +26,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "matches": {
+      "type": "belongsTo",
+      "model": "matches",
+      "foreignKey": "matchID"
+    },
+    "teams": {
+      "type": "belongsTo",
+      "model": "teams",
+      "foreignKey": "teamID"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
