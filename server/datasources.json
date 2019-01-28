@@ -1,17 +1,1 @@
-{
-  "sdss": {
-    "host": "127.0.0.1",
-    "port": 27017,
-    "url": "mongodb://127.0.0.1:27017/sdss",
-    "database": "sdss",
-    "password": "",
-    "name": "sdss",
-    "user": "",
-    "connector": "mongodb"
-  },
-  "atlas-sdss": {
-    "connector": "mongodb",
-    "name": "atlas-sdss",
-    "url": "mongodb://<USERNAME>:<PASSWORD>@cluster0-shard-00-00-bleb7.mongodb.net:27017,cluster0-shard-00-01-bleb7.mongodb.net:27017,cluster0-shard-00-02-bleb7.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
-  }
-}
+{"sdss":{"host":"127.0.0.1","port":27017,"url":"mongodb://127.0.0.1:27017/sdss","database":"sdss","password":"","name":"sdss","user":"","connector":"mongodb"},"atlas-sdss":{"url":"mongodb://<USERNAME>:<PASSWORD>@cluster0-shard-00-00-bleb7.mongodb.net:27017,cluster0-shard-00-01-bleb7.mongodb.net:27017,cluster0-shard-00-02-bleb7.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin","name":"atlas-sdss","connector":"mongodb"}}
