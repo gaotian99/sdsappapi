@@ -1,1 +1,79 @@
-{"name":"teams","plural":"teams","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"name":{"type":"string","required":true},"leagueID":{"type":"string","required":true},"players":{"type":["string"]},"captain":{"type":"string","required":true},"avatar":{"type":"string"},"winInSeason":{"type":"number"},"description":{"type":"string"}},"validations":[],"relations":{"posts":{"type":"hasMany","model":"posts","foreignKey":"ofTeam"},"leagues":{"type":"belongsTo","model":"leagues","foreignKey":"leagueID"},"matches":{"type":"hasMany","model":"matches","foreignKey":"teamID","through":"matchresults","keyThrough":"matchID"},"users":{"type":"hasMany","model":"users","foreignKey":"teamID","through":"teamsusers","keyThrough":"userID"}},"acls":[{"accessType":"*","principalType":"ROLE","principalId":"$everyone","permission":"DENY"},{"accessType":"READ","principalType":"ROLE","principalId":"$everyone","permission":"ALLOW"}],"methods":{}}
+{
+  "name": "teams",
+  "plural": "teams",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "leagueID": {
+      "type": "string",
+      "required": true
+    },
+    "players": {
+      "type": [
+        "string"
+      ]
+    },
+    "captain": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "winInSeason": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "posts": {
+      "type": "hasMany",
+      "model": "posts",
+      "foreignKey": "ofTeam"
+    },
+    "leagues": {
+      "type": "belongsTo",
+      "model": "leagues",
+      "foreignKey": "leagueID"
+    },
+    "matches": {
+      "type": "hasMany",
+      "model": "matches",
+      "foreignKey": "teamID",
+      "through": "matchresults",
+      "keyThrough": "matchID"
+    },
+    "users": {
+      "type": "hasMany",
+      "model": "users",
+      "foreignKey": "teamID",
+      "through": "teamsusers",
+      "keyThrough": "userID"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

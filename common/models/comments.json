@@ -1,1 +1,51 @@
-{"name":"comments","plural":"comments","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"commentContent":{"type":"string","required":true},"userID":{"type":"string","required":true},"postID":{"type":"string","required":true}},"validations":[],"relations":{"users":{"type":"belongsTo","model":"users","foreignKey":"userID"},"posts":{"type":"belongsTo","model":"posts","foreignKey":"postID"}},"acls":[{"accessType":"*","principalType":"ROLE","principalId":"$everyone","permission":"DENY"}],"methods":{}}
+{
+  "name": "comments",
+  "plural": "comments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "commentContent": {
+      "type": "string",
+      "required": true
+    },
+    "userID": {
+      "type": "string",
+      "required": true
+    },
+    "postID": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "belongsTo",
+      "model": "users",
+      "foreignKey": "userID"
+    },
+    "posts": {
+      "type": "belongsTo",
+      "model": "posts",
+      "foreignKey": "postID"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

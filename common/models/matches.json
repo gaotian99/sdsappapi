@@ -1,1 +1,54 @@
-{"name":"matches","plural":"matches","base":"PersistedModel","idInjection":true,"options":{"validateUpsert":true},"properties":{"location":{"type":"string","required":true},"startDate":{"type":"string"},"gameDate":{"type":"date"},"gameTeams":{"type":["string"]},"description":{"type":"string"}},"validations":[],"relations":{"teams":{"type":"hasMany","model":"teams","foreignKey":"matchID","through":"matchresults","keyThrough":"teamID"}},"acls":[{"accessType":"*","principalType":"ROLE","principalId":"$everyone","permission":"DENY"},{"accessType":"READ","principalType":"ROLE","principalId":"$everyone","permission":"ALLOW"}],"methods":{}}
+{
+  "name": "matches",
+  "plural": "matches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "gameDate": {
+      "type": "date"
+    },
+    "gameTeams": {
+      "type": [
+        "string"
+      ]
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "teams": {
+      "type": "hasMany",
+      "model": "teams",
+      "foreignKey": "matchID",
+      "through": "matchresults",
+      "keyThrough": "teamID"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
